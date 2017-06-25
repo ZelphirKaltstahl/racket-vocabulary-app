@@ -15,7 +15,7 @@
             (hash-ref a-hash (first keys))
             (rest keys))]))
 
-(define (nested-hash-set a-hash a-value . keys)
+#;(define (nested-hash-set a-hash a-value . keys)
   (cond [(empty? (rest keys)) (hash-set a-hash (first keys) a-value)]
         [else (hash-set a-hash
                         (first keys)
